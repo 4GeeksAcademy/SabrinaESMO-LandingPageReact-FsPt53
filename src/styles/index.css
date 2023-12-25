@@ -1,12 +1,185 @@
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color:#1cba7d;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #1cba7d;
+    box-shadow: 0px 15px 20px #0c4cb466;
+    color: #fff;
+    transform: translateY(-7px);
+    filter: brightness(110%);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
 
-/* 
+  .card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+  a{
+    color: #9eeaff;
+  }
 
-*/
+  a:hover{
+    color:#0078d7;
+  }
+  
+  .pushable {
+    position: relative;
+    background: transparent;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    outline-offset: 4px;
+    outline-color: deeppink;
+    transition: filter 250ms;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #0c4cb466;
+    border-radius: 8px;
+    filter: blur(2px);
+    will-change: transform;
+    transform: translateY(2px);
+    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+  }
+  
+  .edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background: linear-gradient(
+      to right,
+      hsl(157, 46%, 40%) 0%,
+      hsl(157, 46%, 35%) 8%,
+      hsl(157, 46%, 30%) 92%,
+      hsl(157, 46%, 25%) 100%
+    );
+  }
+  
+  .front {
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    background: #1cba7d;
+    padding: 16px 32px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    transform: translateY(-4px);
+    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+  }
+  
+  .pushable:hover {
+    filter: brightness(110%);
+  }
+  
+  .pushable:hover .front {
+    transform: translateY(-6px);
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+  
+  .pushable:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+  
+  .pushable:hover .shadow {
+    transform: translateY(4px);
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+  
+  .pushable:active .shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+  }
+  
+  .pushable:focus:not(:focus-visible) {
+    outline: none;
+  }
+  
