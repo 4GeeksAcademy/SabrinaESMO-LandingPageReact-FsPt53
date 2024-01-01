@@ -88,14 +88,26 @@ button {
     line-height: 1.4;
   }
 
-  a{
+  a.nav-link{
+    color:#a7a7a7;
+  }
+
+  a.nav-link:focus{
+    color:white;
+  }
+
+  a.myLink{
     color: #9eeaff;
   }
 
-  a:hover{
+  a.myLink:hover{
     color:#0078d7;
   }
   
+h1{
+  font-size: 65px;
+}
+
   .pushable {
     position: relative;
     background: transparent;

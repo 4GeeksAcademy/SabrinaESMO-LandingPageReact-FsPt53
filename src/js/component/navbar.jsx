@@ -12,10 +12,10 @@ const NavBar = () => {
                     <nav class="navbar">
                         <div class="container-fluid">
                             <div className="navbar-nav container-fluid d-flex">
-                                <a className="nav-link text-white-50" aria-current="page" href="#">Home</a>
-                                <a className="nav-link text-white-50" href="#">About</a>
-                                <a className="nav-link text-white-50" href="#">Services</a>
-                                <a className="nav-link text-white-50" href="#">Contact</a>
+                                <a className="nav-link" href="#">Home</a>
+                                <a className="nav-link" href="#">About</a>
+                                <a className="nav-link" href="#">Services</a>
+                                <a className="nav-link" href="#">Contact</a>
                             </div>
                         </div>
                     </nav>
