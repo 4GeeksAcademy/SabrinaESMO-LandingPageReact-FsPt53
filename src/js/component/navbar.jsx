@@ -6,12 +6,12 @@ const NavBar = () => {
             <nav className="navbar navbar-expand-lg text-center mx-5 px-5">
                 <div className="container-fluid">
                     <a className="navbar-brand text-white" href="#">Pablo Estévez Artist</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <nav class="navbar">
-                        <div class="container-fluid">
+                    <nav className="navbar">
+                        <div className="container-fluid">
                             <div className="navbar-nav container-fluid d-flex">
+                                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span className="navbar-toggler-icon"></span>
+                                </button>
                                 <a className="nav-link" href="#">Home</a>
                                 <a className="nav-link" href="#">About</a>
                                 <a className="nav-link" href="#">Services</a>
@@ -25,9 +25,9 @@ const NavBar = () => {
     );
 };
 
-{/* <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand">Navbar</a>
+{/* <nav className="navbar bg-body-tertiary">
+    <div className="container-fluid">
+        <a className="navbar-brand">Navbar</a>
         <div className="navbar-nav container-fluid d-flex">
             <a className="nav-link active" aria-current="page" href="#">Home</a>
             <a className="nav-link" href="#">Features</a>

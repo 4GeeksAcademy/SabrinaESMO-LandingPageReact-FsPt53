@@ -5,7 +5,7 @@ const Card = () => {
         <div className="container-fluid d-flex flex-column align-items-center justify-content-center">
             <div className="d-flex flex-column align-items-center">
                 <div className="card ">
-                    <img src="../../img/Cargando con el pasado.jpg"></img>
+                    <img src="../../img/cargandopasado.jpg"></img>
                     <div className="card__content">
                         <p className="card__title">Cargando con el pasado</p>
                         <p className="card__description">Oleo y acrílico sobre lienzo de 60 x 80 cm</p>
