@@ -11,8 +11,6 @@ const Welcome = () => {
                     Aquí podrás conocer su historia, contemplar sus obras, y próximamente visitar la tienda online.<br></br>
                     También puedes contactar con nosotros ante dudas o sugerencias.
                 </p>
-                <button> Button
-                </button>
             </div>
         </div>
 

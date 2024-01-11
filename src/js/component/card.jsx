@@ -1,28 +1,18 @@
 import React from "react";
+import Cuadro1 from "../../img/peque.jpg";
+
 
 const Card = () => {
     return (
-        <div className="container-fluid d-flex flex-column align-items-center justify-content-center">
-            <div className="d-flex flex-column align-items-center">
-                <div className="card ">
-                    <img src="../../img/cargandopasado.jpg"></img>
-                    <div className="card__content">
-                        <p className="card__title">Cargando con el pasado</p>
-                        <p className="card__description">Oleo y acrílico sobre lienzo de 60 x 80 cm</p>
-                    </div>
+        <div className="container mt-5 mb-5">
+            <div className="book">
+                <button class="button">
+                    INFO
+                </button>
+                <div className="cover">
+                    <img src={Cuadro1} className="container object-fit-contain"></img>
                 </div>
             </div>
-
-            <div className="d-flex justify-content-center mt-3">
-                <button className="pushable ">
-                    <span className="shadow"></span>
-                    <span className="edge"></span>
-                    <span className="front">
-                        Push Me
-                    </span>
-                </button>
-            </div>
-
         </div>
     );
 };
