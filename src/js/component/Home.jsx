@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./Navbar.jsx";
 import Welcome from "./Welcome.jsx";
-import Card from "./Card.jsx";
+import CardsInfo from "./CardsInfo.jsx";
 import Footer from "./Footer.jsx";
 
 //include images into your bundle
@@ -10,16 +10,16 @@ import Footer from "./Footer.jsx";
 //create your first component
 const Home = () => {
 	return (
-		<div className="">
+		<div >
 			<NavBar>
 
 			</NavBar>
 			<Welcome>
 
 			</Welcome>
-			<Card>
+			<CardsInfo>
 
-			</Card>
+			</CardsInfo>
 			<Footer>
 
 			</Footer>
